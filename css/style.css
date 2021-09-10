@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory&family=Urbanist:wght@300&display=swap');
+
+body {
+  font-family: 'Glory', sans-serif;
+  font-size: 17px;
+}
+
+body, html {
+  height: 100%;
+}
+
+html {
+  min-width: 550px;
+  position: relative;
+}
+
+p.solid {
+  outline-color: black;
+  outline-width: 0.5px;
+  outline-style: solid;
+}
+
+/* The hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(250, 243, 243, 0.5), rgba(253, 244, 244, 0.5)), url("../images/bread-header.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+h1 {
+  color: rgb(85, 8, 34);
+  margin-left: 120px;
+  margin-top: 60px;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 40px;
+  text-align: left;
+}
+
+h2 {
+  color: rgb(85, 8, 34);
+  font-family: 'Urbanist', sans-serif;
+  font-size: 30px;
+}
+
+.topnav {
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  display: flex;
+  justify-content: right;
+}
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family:'Urbanist', sans-serif;
+}
+  
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: rgb(175, 102, 102);
+}
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #e696aa;
+  color: white;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  right: 100px;
+}
+
+.title {
+  color: grey;
+  font-size: 20px;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+  position: absolute;
+  left: 100px;
+  padding: 20px;
+}
