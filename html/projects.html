@@ -9,11 +9,53 @@
 </head>
 <body>
   <div class="topnav">
-    <a href="../index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a class="active" href="">Projects</a>
-    <a href="interests.html">Interests</a>
-    <a href="social.html">Social Media</a>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Interests</a>
+        <div class="dropdown-content">
+          <a href="animan.html">Anime/Manga</a>
+          <a href="games.html">Games</a>
+        </div>
+      </li>
+      <li><a class="active" href="">Projects</a></li>
+    </ul>
   </div>
+
+  <div class="hero-image">
+  </div>
+
+  <div id="wrapper">
+    <div class="box topmargin leftmargin">
+        
+        <!-- Control buttons -->
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('3d')"> 3D Models</button>
+          <button class="btn" onclick="filterSelection('games')"> Games</button>
+          <button class="btn" onclick="filterSelection('translations')"> Translations</button>
+          <button class="btn" onclick="filterSelection('2D Art')"> 2D Art</button>
+        </div>
+
+        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+        <div class="container">
+          <div class="filterDiv cars">BMW</div>
+          <div class="filterDiv colors fruits">Orange</div>
+          <div class="filterDiv cars">Volvo</div>
+          <div class="filterDiv colors">Red</div>
+          <div class="filterDiv cars animals">Mustang</div>
+          <div class="filterDiv colors">Blue</div>
+          <div class="filterDiv animals">Cat</div>
+          <div class="filterDiv animals">Dog</div>
+          <div class="filterDiv fruits">Melon</div>
+          <div class="filterDiv fruits animals">Kiwi</div>
+          <div class="filterDiv fruits">Banana</div>
+          <div class="filterDiv fruits">Lemon</div>
+          <div class="filterDiv animals">Cow</div>
+        </div>
+    </div>
+  </div>
+
+  
 </body>
 </html>
