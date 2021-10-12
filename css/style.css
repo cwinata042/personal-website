@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Glory&family=Urbanist:wght@300&display=swap');
 
+@font-face {
+  font-family: GenshinImpact;
+  src:url(../fonts/genshin_impact.woff);
+}
+
+div {
+  overflow: hidden;
+}
+
 body {
   font-family: 'Glory', sans-serif;
   font-size: 17px;
@@ -152,46 +161,85 @@ li.dropdown {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  width: 18%;
+  max-width: 250px;
   text-align: center;
   position: relative;
-  padding: 10px;
+  padding: 1%;
 }
 
 .title {
   color: grey;
-  font-size: 20px;
+  font-size: 1.3vw;
   font-family: 'Urbanist', sans-serif;
+}
+
+.name {
+  color: rgb(85, 8, 34);
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bold;
+  font-size: 1.8vw;
 }
 
 .box {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 1000px;
+  width: 50%;
   text-align: left;
   position: relative;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 2%;
+}
+
+.column {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 40%;
+  text-align: left;
+  position: relative;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 2%;
 }
 
 .left {
   float: left;
-  margin-left: 80px;
+  margin-left: 2%;
 }
 
 .right {
   float: right;
-  margin-right: 100px;
+  margin-right: 2%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.kohane {
+  border: 5px solid pink;
+}
+
+.toya {
+  border: 5px solid rgb(49, 132, 180);
+}
+
+.akito {
+  border: 5px solid rgb(180, 108, 49);
 }
 
 .topmargin {
-  margin-top: 30px;
+  margin-top: 2%;
 }
 
 .leftmargin {
-  margin-left: 10px;
+  margin-left: 2%;
 }
 
 .stacktop {
@@ -199,7 +247,7 @@ li.dropdown {
 }
 
 #wrapper {
-  min-width: 1800px;
+  min-width: 60%;
   overflow: hidden;
 }
 
