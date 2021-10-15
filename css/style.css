@@ -19,13 +19,12 @@ body, html {
 }
 
 html {
-  min-width: 550px;
   position: relative;
 }
 
 /* The hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(250, 243, 243, 0.5), rgba(253, 244, 244, 0.5)), url("../images/bread-header.jpg");
+  background-image: linear-gradient(rgba(250, 243, 243, 0.5), rgba(253, 244, 244, 0.5)), url("../images/header.jpg");
 
   /* Set a specific height */
   height: 50%;
@@ -181,8 +180,16 @@ li.dropdown {
   font-size: 1.8vw;
 }
 
+.section {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 2%;
+}
+
 .box {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
   width: 50%;
   text-align: left;
   position: relative;
@@ -194,7 +201,7 @@ li.dropdown {
 }
 
 .column {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
   width: 40%;
   text-align: left;
   position: relative;
@@ -244,11 +251,6 @@ li.dropdown {
 
 .stacktop {
   z-index: 9;
-}
-
-#wrapper {
-  min-width: 60%;
-  overflow: hidden;
 }
 
 hr {
