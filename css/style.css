@@ -121,13 +121,11 @@ li.dropdown {
 }
 
 .filterDiv {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   float: left;
-  background-color: #2196F3;
   color: #ffffff;
-  width: 100px;
-  line-height: 100px;
   text-align: center;
-  margin: 2px;
+  margin: 1%;
   display: none; /* Hidden by default */
 }
 
@@ -180,9 +178,15 @@ li.dropdown {
   font-size: 1.8vw;
 }
 
+.desch {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
 .section {
   display: inline-block;
-  width: 100%;
+  width: 90%;
   position: relative;
   margin-bottom: 2%;
 }
@@ -247,6 +251,14 @@ li.dropdown {
 
 .leftmargin {
   margin-left: 2%;
+}
+
+.rightmargin {
+  margin-right: 2%;
+}
+
+.bottommargin {
+  margin-bottom: 2%;
 }
 
 .stacktop {
