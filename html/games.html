@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,28 +10,32 @@
   <link rel="shortcut icon" type="image/png" href="../images/games.png"/>
 </head>
 <body>
-  <div class="topnav">
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li class="dropdown">
-        <a class="active" href="javascript:void(0)" class="dropbtn">Interests</a>
-        <div class="dropdown-content">
-          <a href="anime.html">Anime</a>
-          <a href="games.html">Games</a>
-        </div>
-      </li>
-      <li><a href="projects.html">Projects</a></li>
-    </ul>
-  </div>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li><a href="/index.html">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Interests<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="anime.html">Anime</a></li>
+            <li class="active"><a href="#">Games</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <div class="hero-image">
-  </div>
+  <div class="hero"></div>
 
-    <div class="section">
-      <h1>Project Sekai</h1>
-      <img src="../images/prsekai-banner.jpg" class="center topmargin" style="width:50%">
-      
-      <div class="column left topmargin">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <img src="../images/prsekai-banner.jpg" class="center topmargin bottommargin" style="width:80%">
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-lg-6">
         <p>
           Project Sekai is by far my favorite mobile rhythm game!
           It has a nice combination of catchy and nostalgic songs, cute and memorable characters, and a difficult yet fun rhythm game mechanics.
@@ -41,9 +46,9 @@
           Project Sekai has a system where you can play as many songs as you want, and the stamina (called energy) increases the rewards you get for playing.
           As someone who enjoys the game more for the rhythm aspect, this is a feature I hope will become more popular in other games!
         </p>
-
+  
         <h2>Gameplay</h2>
-        <img src="../images/prsekai-gameplay.jpg" class="center topmargin" style="width:50%">
+        <img src="../images/prsekai-gameplay.jpg" class="center topmargin bottommargin" style="max-width:400px; width:70%">
         <p>
           The game mechanics are relatively simple and similar to another arcade rhythm game called Chunithm.
           There is a horizontal playing space at the bottom of the screen (although you can tap the space above this bar).
@@ -54,41 +59,56 @@
           Personally, I turn most visual effects off, including the 3D music video, because I like to get rid of any distractions.
         </p>
       </div>
-
-      <div class="column right topmargin">
+      
+      <div class="col-lg-6">
         <h2>Characters</h2>
         <p>
           I usually don't pay attention to characters in rhythm gacha games, solely because I don't want to get too attached to a character and wind up never getting their card.
           However, some of the designs and character voices are too good to pass, so here are some of my favorite characters and the cards I have gotten of them!
         </p>
 
-        <div>
-          <h3>Azusawa Kohane</h3>
-          <img src="../images/prsekai-kohane1.png" class="kohane left" style="width:40%">
-          <img src="../images/prsekai-kohane2.png" class="kohane left" style="width:40%">
+        <h3>Azusawa Kohane</h3>
+        <div class="row">
+          <div class="col-lg-6 col-sm-4 col-4">
+            <img src="../images/prsekai-kohane1.png" class="center kohane" style="max-width:400px; width:90%">
+          </div>
+          <div class="col-lg-6 col-sm-4 col-4">
+            <img src="../images/prsekai-kohane2.png" class="center kohane" style="max-width:400px; width:90%">
+          </div>
         </div>
 
-        <div>
-          <h3>Aoyagi Toya</h3>
-          <img src="../images/prsekai-toya1.png" class="toya left" style="width:40%">
-          <img src="../images/prsekai-toya2.png" class="toya left" style="width:40%">
+        <h3>Aoyagi Toya</h3>
+        <div class="row">
+          <div class="col-lg-6 col-sm-4 col-4">
+            <img src="../images/prsekai-toya1.png" class="center toya" style="max-width:400px; width:90%">
+          </div>
+          <div class="col-lg-6 col-sm-4 col-4">
+            <img src="../images/prsekai-toya2.png" class="center toya" style="max-width:400px; width:90%">
+          </div>
         </div>
 
-        <div>
-          <h3>Shinonome Akito</h3>
-          <img src="../images/prsekai-akito1.png" class="akito left" style="width:40%">
-          <img src="../images/prsekai-akito2.png" class="akito left" style="width:40%">
+        <h3>Shinonome Akito</h3>
+        <div class="row">
+          <div class="col-lg-6 col-sm-4 col-4">
+            <img src="../images/prsekai-akito1.png" class="center akito" style="max-width:400px; width:90%">
+          </div>
+          <div class="col-lg-6 col-sm-4 col-4">
+            <img src="../images/prsekai-akito2.png" class="center akito" style="max-width:400px; width:90%">
+          </div>
         </div>
       </div>
     </div>
 
     <hr>
 
-    <div id="section">
-      <h1>Genshin Impact</h1>
-      <img src="../images/gi-banner.jpg" class="center topmargin" style="width:50%">
+    <div class="row">
+      <div class="col-lg-12">
+        <img src="../images/gi-banner.jpg" class="center topmargin bottommargin" style="width:80%">
+      </div>
+    </div>
 
-      <div class="column left topmargin">
+    <div class="row bottommargin">
+      <div class="col-lg-6">
         <p>
           When I first got into Genshin Impact, I thought I would play the game for a week and get bored of it pretty quickly.
           The game is now celebrating its 1st anniversary, and I have been playing it every day ever since release.
@@ -119,27 +139,50 @@
           Not only that, but the BGM matches each region's theme and mood perfectly!
         </p>
       </div>
-
-      <div class="column right topmargin">
+      
+      <div class="col-lg-6">
         <h2>Characters</h2>
-          <img src="../images/gi-tartaglia.png" class="left" style="width:30%">
-          <img src="../images/gi-kazuha.png" class="left" style="width:30%">
-          <img src="../images/gi-hu-tao.png" class="left" style="width:30%">
+        <div class="row">
+          <div class="col-lg-3 col-sm-2 col-2">
+            <img src="../images/gi-tartaglia.png" class="center" style="max-width:300px; width:100%">
+          </div>
+          <div class="col-lg-9 col-10">
+            Tartaglia's kit revolves around his elemental skill's cooldown.
+            Playing him poorly can be punishing, especially when you're waiting for his skill to come back up, so you have to learn the timing for his teams.
+            Not only is his kit pretty complicated, but he has one of the most visually pleasing attack animations in the game!
+          </div>
+        </div>
 
-          <hr>
+        <hr>
 
-          <p>
-            1) Tartaglia has visually pleasing attack animations and one of the most fun kits in the game!
-            <br>
-            2) Kazuha's jump skill is extremely useful in overworld, especially when you are exploring.
-            <br>
-            3) Hu Tao has another fun kit, one that requires to keep a close eye on your HP bar!
-          </p>
-          
-          <hr>
+        <div class="row">
+          <div class="col-lg-3 col-sm-2 col-2">
+            <img src="../images/gi-kazuha.png" class="center" style="max-width:300px; width:100%">
+          </div>
+          <div class="col-lg-9 col-sm-10">
+            Kazuha's entire kit is useful, universal, and, more importantly, fun.
+            His elemental skill boosts himself into the air can be used even in midair, and his elemental burst summons a field that swirls elements every few seconds.
+            Personally, I love his maple leaf design, which can be seen in both his kimono pattern and his skill and burst.
+          </div>
+        </div>
 
-          <img src="../images/gi-profile.png" class="center" style="width:80%">
+        <hr>
+
+        <div class="row">
+          <div class="col-lg-3 col-sm-2 col-2">
+            <img src="../images/gi-hu-tao.png" class="center" style="max-width:300px; width:100%">
+          </div>
+          <div class="col-lg-9 col-sm-10">
+            Hu Tao has to sacrifice her health in order to do damage, although her elemental burst is designed to heal her back up.
+            Her kit can feel a little dangerous to play, especially when you are at low HP and without a shield, but her mobility and possible teammates make up for that!
+            Although she tends to eliminate low HP enemies quickly, getting down her rotations and animation canceling is extremely satisfying!
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>

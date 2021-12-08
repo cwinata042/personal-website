@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,35 +10,55 @@
   <link rel="shortcut icon" type="image/png" href="../images/project.png"/>
 </head>
 <body>
-  <div class="topnav">
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Interests</a>
-        <div class="dropdown-content">
-          <a href="anime.html">Anime</a>
-          <a href="games.html">Games</a>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li><a href="/index.html">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Interests<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="anime.html">Anime</a></li>
+            <li><a href="games.html">Games</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="#">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>3D Models</h2>
+        <div class="row">
+          <a href="https://genshin-impact.fandom.com/wiki/Rust">
+            <img src="../images/rust-model.png" class="bottommargin" style="max-width:400px; width:50%">
+          </a>
+
+          <a href="https://genshin-impact.fandom.com/wiki/Freedom-Sworn">
+            <img src="../images/freedom-model.png" style="max-width:400px; width:50%">
+          </a>
         </div>
-      </li>
-      <li><a class="active" href="">Projects</a></li>
-    </ul>
-  </div>
-
-  <div class="hero-image">
-  </div>
-
-  <div id="wrapper">
-    <h1>3D Models</h2>
-    <div class="section">
-      <div class="column left">
-        <img src="../images/rust-model.png" style="width:80%">
-        <img src="../images/freedom-model.png" style="width:60%">
       </div>
-      <h1>Art</h2>
-      <div class="column left">
-
+      
+      <div class="col-lg-6">
+        <h2>Translations</h2>        
+        <div class="row">
+          <a href="https://mangadex.org/title/f6af213d-a0ce-4925-8026-698f68d1402a">
+            <img src="../images/zense-coupling.jpg" class="bottommargin" style="max-width:400px; width:50%">
+          </a>
+          <a href="https://mangadex.org/title/b176d1f5-e6b2-47f5-9bf1-7e44ebc4eec7/dandara-gohan">
+            <img src="../images/dandara-gohan.jpg" style="max-width:400px; width:50%">
+          </a>
+        </div>
       </div>
     </div>
   </div>
+
+  <br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>

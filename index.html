@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,52 +10,94 @@
   <link rel="shortcut icon" type="image/png" href="images/home.png"/>
 </head>
 <body>
-  <div class="topnav">
-    <ul>
-      <li><a class="active" href="">Home</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Interests</a>
-        <div class="dropdown-content">
-          <a href="html/anime.html">Anime</a>
-          <a href="html/games.html">Games</a>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Interests<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/html/anime.html">Anime</a></li>
+            <li><a href="/html/games.html">Games</a></li>
+          </ul>
+        </li>
+        <li><a href="/html/projects.html">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero"></div>
+
+  <div class="container topmargin">
+    <div class="row">
+      <div class="col-lg-3">
+        <img src="../images/nyanko.jpg" class="center" style="max-width:230px; width:90%">
+        <p>
+          <img src="../images/email.png" style="max-width:30px; width:10%"> cwinata042@gmail.com
+        </p>
+        <p>
+          <img src="../images/discord.png" style="max-width:30px; width:10%"> konburuu#8085
+        </p>
+        <p>
+          <img src="../images/twitter.png" style="max-width:30px; width:10%"> @konburuu
+        </p>
+      </div>
+      <div class="col-lg-6 bottommargin">
+        Hello! My name is Chelsea Winata, a 2nd year CM major at Georgia Tech.
+        Although I have a countless number of hobbies, I mainly enjoy drawing and translating Japanese to English.
+        <br><br>You will be able to find information about game/art projects I have worked on before and some of my interests on this website!
+        If you need to reach me for anything, you can find my contact information by checking the icons under my profile card.
+      </div>
+      <div class="col-lg-3">
+        <div class="row bottommargin">
+          <div class="col-lg-3 col-sm-2 col-2">
+            <img src="/images/photoshop-icon.png" style="max-width:120px; width:100%">
+          </div>
+          <div class="col-lg-9 col-10">
+            Photo editing, typesetting
+          </div>
         </div>
-      </li>
-      <li><a href="html/projects.html">Projects</a></li>
-    </ul>
+
+        <div class="row bottommargin">
+          <div class="col-lg-3 col-sm-2 col-2">
+            <img src="/images/illustrator-icon.png" style="max-width:120px; width:100%">
+          </div>
+          <div class="col-lg-9 col-10">
+            Vector tracing, logo design
+          </div>
+        </div>
+
+        <div class="row bottommargin">
+          <div class="col-lg-3 col-sm-2 col-2">
+            <img src="/images/csp-icon.jpg" style="max-width:120px; width:100%">
+          </div>
+          <div class="col-lg-9 col-10">
+            Anime-styled art
+          </div>
+        </div>
+
+        <div class="row bottommargin">
+          <div class="col-lg-3 col-sm-2 col-2">
+            <img src="/images/maya-icon.png" style="max-width:120px; width:100%">
+          </div>
+          <div class="col-lg-9 col-10">
+            3D modeling
+          </div>
+        </div>
+
+        <div class="row bottommargin">
+          <div class="col-lg-3 col-sm-2 col-2">
+            <img src="/images/translation-icon.png" style="max-width:120px; width:100%">
+          </div>
+          <div class="col-lg-9 col-10">
+            (JP -> EN) Subtitles, novels, manga
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
   </div>
 
-  <div class="hero-image"></div>
-  <div id="section">  
-    <div class="card left topmargin">
-      <img src="../images/nyanko.jpg" style="width:90%">
-      <p class="name">Chelsea Winata</p>
-      <p class="title">Artist & Translator</p>
-      <p>
-        <img src="../images/email.png" style="width:10%"> cwinata042@gmail.com
-      </p>
-      <p>
-        <img src="../images/discord.png" style="width:10%"> konburuu#8085
-      </p>
-      <p>
-        <img src="../images/twitter.png" style="width:10%"> @konburuu
-      </p>
-    </div>
-
-    <div class="box left topmargin bottommargin">
-      Hello! My name is Chelsea Winata, a 2nd year CM major at Georgia Tech.
-      Although I have a countless number of hobbies, I mainly enjoy drawing and translating Japanese to English.
-      <br><br>You will be able to find information about game/art projects I have worked on before and some of my interests on this website!
-      If you need to reach me for anything, you can find my contact information by checking the icons under my profile card.
-
-      <hr>
-        
-      <h2>Skills/Programs</h2>
-      <h3>Adobe Photoshop</h3>Photo editing, typesetting
-      <h3>Adobe Illustrator</h3>Vector tracing, logo design
-      <h3>CLIP STUDIO PAINT</h3>
-      <h3>Autodesk Maya</h3>Object 3D modeling
-      <h3>Translating (JP -> EN)</h3>Subtitles, novels, manga
-    </div>
-  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
